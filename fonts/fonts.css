@@ -1,0 +1,61 @@
+@font-face{
+    font-family: 'Akrobat-Black';
+    src: url(./Akrobat-Black.otf);
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face{
+    font-family: 'Akrobat-Bold';
+    src: url(./Akrobat-Bold.otf);
+    font-style: normal;
+    font-weight: normal
+}
+@font-face{
+    font-family: 'Akrobat-ExtraBold';
+    src: url(./Akrobat-ExtraBold.otf);
+    font-style: normal;
+    font-weight: normal
+}
+@font-face{
+    font-family: 'Akrobat-ExtraLight';
+    src: url(./Akrobat-ExtraLight.otf);
+    font-style: normal;
+    font-weight: normal
+}
+@font-face{
+    font-family: 'Akrobat-Light';
+    src: url(./Akrobat-Light.otf);
+    font-style: normal;
+    font-weight: normal
+}
+@font-face{
+    font-family: 'Akrobat-Regular';
+    src: url(./Akrobat-Regular.otf);
+    font-style: normal;
+    font-weight: normal
+}
+@font-face{
+    font-family: 'Akrobat-SemiBold';
+    src: url(./Akrobat-SemiBold.otf);
+    font-style: normal;
+    font-weight: normal
+}
+@font-face{
+    font-family: 'Akrobat-Thin';
+    src: url(./Akrobat-Thin.otf);
+    font-style: normal;
+    font-weight: normal
+}
+@font-face{
+    font-family: 'Helvetica';
+    src: url(./Helvetica.otf);
+    font-style: normal;
+    font-weight: normal
+}
+@font-face{
+    font-family: 'HelveticaBold';
+    src: url(./HelveticaBold.ttf);
+    font-style: normal;
+    font-weight: normal
+}
