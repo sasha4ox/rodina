@@ -1,4 +1,3 @@
-
     function initMap(){
         var element = document.getElementById("map");
         var options = {
@@ -33,11 +32,116 @@
         }
        
 }
+window.onload = function(){
+let windowWidth = document.documentElement.clientWidth;
+console.log(windowWidth)
 
+//slider for social icons
+if(windowWidth >1400){
+    $('.social-programs-wrapper').slick({
+        autoplay:false,
+        arrows: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+    });
+    
+}else if (windowWidth < 1400 && windowWidth>=1200){
+    $('.social-programs-wrapper').slick({
+        autoplay:false,
+        arrows: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+    });
+}else if (windowWidth < 1200 && windowWidth>=970){
+    $('.social-programs-wrapper').slick({
+        autoplay:false,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+    });
+}else if (windowWidth < 970 && windowWidth>=740){
+    $('.social-programs-wrapper').slick({
+        autoplay:false,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+    });
+}else if (windowWidth < 740 && windowWidth>=525){
+    $('.social-programs-wrapper').slick({
+        autoplay:false,
+        arrows: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+    });
+}else if (windowWidth < 525){
+    $('.social-programs-wrapper').slick({
+        autoplay:false,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+    });
+}
+
+// banner slider
+$('.main-banner').slick({
+    autoplay:true,
+    arrows: false,
+    autoplaySpeed: 2000,
+    nextArrow: $('.main-banner')
+});
+
+// click on page ourpharmacies
+let pharm = document.getElementsByClassName("pharm-place");
+Array.from(pharm).forEach(x=>{
+    x.addEventListener("click", function(x){
+        let curentDiv = x.target;
+        let p = curentDiv.getElementsByClassName("pharm-placeP")
+        Array.from(p).forEach(x=>{
+            if(x.classList.contains("visible")){
+                x.classList.remove("visible")
+            }else{
+                x.classList.add("visible")
+            }
+        })
+        
+    })
+})
+
+let vacancy = document.getElementsByClassName("vacancy-place");
+Array.from(vacancy).forEach(x=>{
+    x.addEventListener("click", function(x){
+        let curentDiv = x.target;
+        console.log(curentDiv)
+        let p = curentDiv.getElementsByClassName("vacancy-placeP")
+        Array.from(p).forEach(x=>{
+            if(x.classList.contains("visible")){
+                x.classList.remove("visible")
+            }else{
+                x.classList.add("visible")
+            }
+        })
+        
+    })
+})
+
+
+// data-slick='{"slidesToShow": 6, "slidesToScroll": 1}'
 // let button = document.getElementById("button");
 // let aside = document.getElementById("aside");
 // let hiddenBar = document.getElementById("hiddenBar");
-let map = document.getElementById("map");
+// let map = document.getElementById("map");
 // button.classList.remove("buttonHidden");
 // aside.classList.remove("asideHidden");
 // hiddenBar.classList.remove("hiddenBar");
@@ -57,3 +161,5 @@ let map = document.getElementById("map");
 //     }
    
 // })
+}
+    

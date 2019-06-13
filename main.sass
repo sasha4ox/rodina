@@ -1,0 +1,1224 @@
+* 
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+
+body
+    font-family: HelveticaBold
+
+a
+    text-decoration: none
+    font-family: Akrobat-SemiBold
+    font-size: 26px
+    color: #154727
+
+.wrapper-for-header
+    width: 1920px
+    margin: 0 auto
+    @media screen and (max-width: 1440px)
+        width: 100%
+header
+    width: 100%
+    height: 204px
+    background: #a2c632
+    display: inline-block
+    position: relative
+    @media screen and (max-width: 1140px)
+        height: 100%
+.header-wrapper-phone
+    width: 100%
+    height: 50px
+    background: #d3e6b9
+    margin-top: 10px
+.header-phone
+    width: 1410px
+    margin: 0 auto
+    display: flex
+    justify-content: flex-end
+    @media screen and (max-width: 1440px)
+        width: 100%
+.header-phone-div
+    width: 409px
+    height: 50px
+    display: flex
+.header-phone-p
+    height: 100%
+    width: 260px
+    background: #ec2028 url(./img/callbackBG.png)
+    border-radius: 0 0 25px 25px
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #fff
+    font-family: Helvetica
+    font-size: 20px
+
+.header-text
+    color: #ec2028
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: Helvetica
+    font-size: 20px
+    letter-spacing: 1px
+    margin: 0 15px 0 0
+.active
+    color: red
+.active:before
+    content: ""
+    width: 100%
+    height: 5px
+    background: #a2c632
+    position: absolute
+    top: 0
+.nav-wrapper100
+    width: 100%
+    background: #ffffff
+.nav-wrapper
+    width: 1410px
+    @media screen and (max-width: 1440px)
+        width: 100%
+    margin: 0 auto
+    height: 100%
+    display: flex
+    justify-content: flex-end
+    position: relative
+.nav-header
+    width: 1170px
+    @media screen and (max-width: 1440px)
+        width: 80%
+    @media screen and (max-width: 595px)
+        width: 95%
+.nav-header>ul
+    list-style: none outside none
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 100%
+    @media screen and (max-width: 1212px)
+       flex-direction: column
+    @media screen and (max-width: 595px)
+        align-items: flex-start
+.nav-header>ul>li
+    list-style: none outside none
+    height: 60px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    margin-right: 15px
+.nav-header>ul>li>a:hover
+    color: red
+.logo
+    position: absolute
+    top: -35px
+    left: 0
+    z-index: 10
+    @media screen and (max-width: 595px)
+        display: none
+
+.bgHeader
+    background: url(./img/headerBG.png) no-repeat
+    background-size: contain
+    width: 100%
+    height: 54px
+    position: absolute
+    bottom: 15px
+    @media screen and (max-width: 1212px)
+        display: none
+.wrapper-for-footer
+    width: 1920px
+    margin: 0 auto
+    @media screen and (max-width: 1440px)
+        width: 100%
+
+footer
+    width: 100%
+    height: 530px
+    background: #a2c632 url(./img/BanBg.png) no-repeat 100% 100%
+    display: flex
+    flex-direction: column
+.map
+    height: 275px
+    width: 100%
+.footer-nav-wrapper
+    width: 1100px
+    margin: 0 auto
+    height: 20%
+    display: flex
+    justify-content: center
+    align-items: center
+    @media screen and (max-width: 1440px)
+        width: 80%
+.nav-footer
+    width: 100%
+.nav-footer>ul
+    list-style: none outside none
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 100%
+    font-family: Akrobat-SemiBold
+    font-size: 26px
+    color: #154727
+    @media screen and (max-width: 1220px)
+        flex-wrap: wrap
+.nav-footer ul li>a
+    @media screen and (max-width: 1220px)
+        font-size: 20px
+    @media screen and (max-width: 995px)
+        font-size: 15px
+.nav-footer ul>li
+    list-style: none outside none
+    height: 100%
+    margin-right: 15px
+    display: block
+.footer-links
+    width: 100%
+    height: 80%
+.main-banner-wrapper
+    width: 1920px
+    margin: 0 auto
+    background: #a2c632 url(./img/BanBg.png) repeat
+    background-position: 0 0
+    position: relative
+    padding-bottom: 200px
+    @media screen and (max-width: 1440px)
+        width: 100%
+.main-banner-wrapper::after
+    content: ""
+    background: url(./img/BanBg2.png) no-repeat
+    background-size: cover
+    width: 100%
+    height: 10%
+    position: absolute
+    bottom: 0
+.main-banner
+    width: 1440px
+    max-height: 524px
+    margin: 0 auto
+    background: #ccc
+    @media screen and (max-width: 1440px)
+        width: 90%
+.main-banner-link img
+    width: 100%
+    height: 100%
+.main-icons-wrapper
+    width: 1120px
+    margin: 50px auto 0
+    display: flex
+    justify-content: space-between
+    @media screen and (max-width: 1440px)
+        width: 80%
+    @media screen and (max-width: 1150px)
+        flex-direction: column
+        align-items: center
+.main-icon
+    @media screen and (max-width: 1150px)
+        margin-top: 15px
+.main-icons-wrapper h3
+    text-align: center
+    font-family: Akrobat-SemiBold
+    font-size: 26px
+    color: #004116
+main
+    width: 1920px
+    margin: 0 auto
+    background: #fff
+    @media screen and (max-width: 1440px)
+        width: 100%
+main h1
+    color: #ed1c24
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    height: 65px
+    display: flex
+    align-items: center
+    justify-content: center
+.main-inner-wrapper
+    width: 1440px
+    margin: 0 auto
+    @media screen and (max-width: 1440px)
+        width: 95%
+.main-promo-wrapper
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    background: #d6e9bc
+    @media screen and (max-width: 1000px)
+        flex-direction: column
+        align-items: center
+.main-promo
+    width: 450px
+    margin: 15px
+    overflow: hidden
+    position: relative
+    @media screen and (max-width: 1440px)
+        width: 30%
+    @media screen and (max-width: 1000px)
+        width: 70%
+.main-promo img
+    transition: all 2s ease
+.main-promo:hover .promo-tittle
+    display: block
+.main-promo:hover img
+    transform: scale(1.1)
+.promo-tittle
+    font-family: Helvetica
+    font-size: 18px
+    color: #154727
+    display: none
+    position: absolute
+    top: 10px
+    right: 0
+    background: #d3e6b9
+    border: 1px solid #295739
+    padding: 10px
+    z-index: 10
+.main-promo img
+    @media screen and (max-width: 1440px)
+        width: 100%
+.button-more
+    width: 160px
+    height: 50px
+    background: #66952e
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    color: #fefffe
+    text-transform: uppercase
+    border-radius: 5px
+    margin-bottom: 20px
+    
+.our-mission
+    width: 1440px
+    min-height: 400px
+    margin: 0 auto
+    background: #fff
+    display: flex
+    @media screen and (max-width: 1440px)
+        width: 95%
+.our-mission-text
+    margin-left: 15px
+    width: 945px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    @media screen and (max-width: 1440px)
+        width: 60%
+    @media screen and (max-width: 900px)
+        width: 100%
+.our-mission-text p
+    font-family: Helvetica
+    font-size: 18px
+    color: #58595b
+    letter-spacing: 0.3px
+    margin-top: 30px
+    margin-bottom: 5px
+.our-mission-text h2
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    color: #154727
+.our-mission-pic
+    
+    // background: url(./img/missionRight.png) no-repeat 100% 0
+.our-mission-pic img
+    
+    @media screen and (max-width: 1440px)
+        background-size: contain
+    @media screen and (max-width: 900px)
+        display: none
+.social-programs
+    width: 1440px
+    height: 310px
+    margin: 0 auto
+    padding: 0 10px
+    background: url(./img/socialBg.png) no-repeat
+    background-size: cover
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    @media screen and (max-width: 1440px)
+        width: 95%
+.social-programs-wrapper
+    width: 85%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-left: 25px
+    
+.prev
+    background: url(./img/prev.png) no-repeat
+    width: 45px
+    height: 86px
+    border: none
+    margin-left: 15px
+    cursor: pointer
+    position: absolute
+    top: 35%
+    left: 2%
+.prev:focus
+    outline: none
+
+.next
+    background: url(./img/next.png) no-repeat
+    width: 45px
+    height: 86px
+    border: none
+    margin-rught: 15px
+    cursor: pointer
+    position: absolute
+    top: 35%
+    right: 2%
+.next:focus
+    outline: none
+    
+.wrapper-for-social-program
+    @media screen and (max-width: 524px)
+        margin-left: 35px
+.wrapper-for-social-program img
+    // width: 100%
+    // height: 100%
+.wrapper-for-social-program:hover .tittle-for-social
+    display: block
+.tittle-for-social
+    font-family: Helvetica
+    font-size: 18px
+    color: #154727
+    display: none
+    position: absolute
+    top: 0%
+    background: #fff
+    border: 1px solid #295739
+    padding: 10px
+    z-index: 10
+.AboutUs
+    width: 1440px
+    min-height: 400px
+    margin: 0 auto
+    background: #fff
+    display: flex
+    @media screen and (max-width: 1440px)
+        width: 95%
+    @media screen and (max-width: 780px)  
+        flex-direction: column
+.AboutUs-text
+    margin-left: 15px
+    width: 945px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    @media screen and (max-width: 1440px)
+        width: 60%
+    @media screen and (max-width: 780px)
+        width: 95%
+.AboutUs-text p
+    font-family: Helvetica
+    font-size: 18px
+    color: #58595b
+    letter-spacing: 0.3px
+    margin-top: 30px
+    margin-bottom: 5px
+.AboutUs-text h2
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    color: #154727
+.AboutUs-pic
+    width: 480px
+    min-height: 400px
+    position: relative
+    @media screen and (max-width: 1440px)
+        width: 40%
+        height: 100%
+    @media screen and (max-width: 780px)
+        display: none
+.AboutUs-pic::before
+    content: ""
+    background: url(./img/AboutUs.png) no-repeat
+    background-size: contain
+    width: 100%
+    height: 100%
+    position: absolute
+    top: -40px
+
+.news
+    width: 1920px
+    margin: 0 auto
+    background: url(./img/bgfornews.png)
+    @media screen and (max-width: 1440px)
+        width: 95%
+
+.news h2
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    color: #154727
+    height: 70px
+    display: flex
+    align-items: center
+    justify-content: center
+.news-inner-wrapper
+    width: 1440px
+    margin: 0 auto
+    @media screen and (max-width: 1440px)
+        width: 100%
+.news-promo-wrapper
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-bottom: 10px
+    @media screen and (max-width: 980px)
+        flex-direction: column
+        align-items: center
+.news-promo
+    width: 450px
+    margin: 15px
+    background: #fff
+    @media screen and (max-width: 1440px)
+        width: 30%
+    @media screen and (max-width: 980px)
+        width: 90%
+.news-promo img
+    width: 450px
+    border-bottom: 1px solid #ec2529
+    width: 100%
+    @media screen and (max-width: 1440px)
+        width: 100%
+.news-promo p
+    font-family: Helvetica
+    font-size: 18px
+    color: #58595b
+    padding: 10px
+.map
+    display: flex
+
+// ABOUT
+
+
+.about-main
+    width: 1440px
+    margin: 0 auto
+    background: #fff
+    @media screen and (max-width: 1440px)
+        width: 100%
+.about-main h1
+    font-family: Akrobat-SemiBold
+    font-size: 60px
+    height: 90px
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #4b7520
+.about-main-wrapper
+    width: 100%
+    display: flex
+    margin: 0 auto
+    @media screen and (max-width: 1170px)
+        flex-direction: column
+.about-main-wrapper-left
+    width: 960px
+    @media screen and (max-width: 1440px)
+        width: 65%
+    @media screen and (max-width: 1170px)
+        width: 95%
+.about-main-wrapper-left-about
+    width: 945px
+    margin-right: 15px
+    padding-left: 15px
+    border-bottom: 2px solid #547c2c
+    @media screen and (max-width: 1440px)
+        width: 100%
+.about-main-wrapper-left-about img
+    float: left
+    margin-right: 30px
+    @media screen and (max-width: 1210px)
+        float: none
+        margin-right: 0
+        display: block
+        margin: 0 auto
+    @media screen and (max-width: 500px)
+        width: 95%
+        
+
+.about-main-wrapper-left-about p
+    font-family: Helvetica
+    font-size: 18px
+    letter-spacing: 0.2px
+    color: #58595b
+    margin-bottom: 20px
+.about-main-wrapper-left-our-values
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    width: 945px
+    margin-right: 15px
+    padding-left: 15px
+    @media screen and (max-width: 1440px)
+        width: 100%
+.about-main-wrapper-left-our-values h2
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    color: #154727
+    height: 60px
+    display: flex
+    justify-content: center
+    align-items: center
+.about-main-wrapper-left-our-values-wrapper
+    width: 930px
+    margin-bottom: 40px
+    @media screen and (max-width: 1440px)
+        width: 100%
+.about-main-wrapper-left-our-values-wrapper h3
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    color: #66952e
+.about-main-wrapper-left-our-values-wrapper p
+    font-family: Helvetica
+    font-size: 18px
+    color: #6e6f71
+.about-main-wrapper-left-our-values-wrapper img
+    float: left
+    margin-right: 30px
+    @media screen and (max-width: 480px)
+        float: none
+
+.about-main-wrapper-right
+    width: 480px
+    @media screen and (max-width: 1440px)
+        width: 35%
+    @media screen and (max-width: 1170px)
+        width: 95%
+.about-main-wrapper-right-promo
+    width: 100%
+    background: #d6e9bc
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.about-main-wrapper-right-promo img
+    width: 450px
+    margin: 5px 0 15px 0
+    @media screen and (max-width: 1440px)
+        width: 90%
+.about-main-wrapper-right-promo h3
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    color: #154727
+    margin: 15px auto
+    @media screen and (max-width: 820px)
+        font-size: 28px
+.about-main-wrapper-right-lastNews
+    width: 100%
+    background: #d6e9bc
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 15px 0 15px
+.about-main-wrapper-right-lastNew
+    width: 450px   
+    @media screen and (max-width: 1440px)
+        width: 95%
+.about-main-wrapper-right-lastNew p
+    min-height: 130px
+    font-family: Helvetica
+    color: #6a6a6a
+    font-size: 18px
+    margin-bottom: 10px
+.lastNew-day
+    font-family: Akrobat-Bold
+    font-size: 18px
+    color: black
+.lastNew-h
+    font-family: Akrobat-Bold
+    font-size: 20px
+    letter-spacing: 0.8px
+    color: #4b7520
+.about-main-wrapper-right-lastNews h3
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    color: #154727
+    margin-bottom: 20px
+.about-main-wrapper-right-information
+    width: 100%
+    background: #d6e9bc
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 15px 0
+.about-main-wrapper-right-information h3
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    color: #154727
+    @media screen and (max-width: 820px)
+        font-size: 28px
+.about-main-wrapper-right-information img
+    margin-bottom: 10px
+    width: 90%
+    height: 90%
+.about-team-subscribe
+    width: 1440px
+    margin: 0 auto
+    display: flex
+    @media screen and (max-width: 1440px)
+        width: 95%
+    @media screen and (max-width: 1000px)
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+    
+.about-team-subscribe-left
+    width: 930px
+    margin: 0 15px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    @media screen and (max-width: 1440px)
+        width: 55%
+    @media screen and (max-width: 1000px)
+        width: 95%
+.about-team-subscribe-left h2
+    color: #66952e
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    height: 65px
+    display: flex
+    align-items: center
+    justify-content: center
+.about-team-subscribe-left p
+    font-family: Helvetica
+    font-size: 18px
+    color: #58595b
+.about-team-subscribe-right
+    margin: 15px 0 10px 0
+    padding: 0 15px
+    background: #d6e9bc
+    display: flex
+    justify-content: center
+    align-items: center
+    //  screen and (max-width: 1440px)
+    //     width: 45%
+    @media screen and (max-width: 1000px)
+        width: 95%
+    
+.about-team-subscribe-right-wrapper
+    width: 450px
+    background: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    margin: 15px 0 15px 0
+    
+input
+    &[type="email"]
+        width: 330px
+        height: 50px
+        margin: 0 auto
+        border: 2px solid #9a9a9a
+        background: #f1f6e3
+        padding-left: 15px
+        color: #709583
+        font-family: Helvetica
+        color: #6a6a6a
+        font-size: 18px
+        margin-bottom: 25px
+    &[type="email"]:focus
+        border: 2px solid #a1c532
+    &[type="button"]
+        background: #66952e
+        width: 320px
+        height: 50px
+        border-radius: 5px
+        color: #fefffe
+        font-family: Akrobat-SemiBold
+        font-size: 26px
+        margin-bottom: 35px
+.about-team-subscribe-right-wrapper h2
+    color: #66952e
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    margin: 10px 0 35px 0
+    @media screen and (max-width: 1000px)
+        font-size: 25px
+.about-team-subscribe-right-wrapper h3
+    width: 350px
+    text-align: center
+    color: #154727
+    font-family: Akrobat-SemiBold
+    font-size: 30px
+    margin-bottom: 25px
+    
+.about-promo-sell
+    width: 1440px
+    margin: 0 auto 15px
+    background: #d6e9bc
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    @media screen and (max-width: 1440px)
+        width: 95%
+.about-promo-sell-positions
+    width: 98%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 15px
+.about-promo-sell-position
+    width: 450px
+    overflow: hidden
+    @media screen and (max-width: 1440px)
+        width: 32%
+.about-promo-sell-position img
+    width: 100%
+    transition: all ease 2s
+.about-promo-sell-position:hover img
+    cursor: pointer
+    transform: scale(1.1)
+.about-promo-sell h2
+    color: #66952e
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    margin: 10px 0 20px 0
+.pharm-main-wrapper
+    width: 1440px
+    display: flex
+    margin: 0 auto
+    @media screen and (max-width: 1440px)
+        width: 98%
+    @media screen and (max-width: 1100px)
+        flex-direction: column
+        align-items: center
+.pharmH1
+    font-family: Akrobat-SemiBold
+    font-size: 60px
+    width: 1440px
+    color: #4b7520
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    @media screen and (max-width: 1440px)
+        width: 100%
+.pharm-main-wrapper-left-about
+    width: 945px
+    margin-right: 15px
+    padding-left: 15px
+    @media screen and (max-width: 1440px)
+        width: 95%
+    @media screen and (max-width: 1110px)
+        margin-bottom: 15px
+.pharm-main-wrapper-left-about img
+    width: 100%
+    height: 100%
+.pharm-main-wrapper-left-about p
+    font-family: Helvetica
+    font-size: 18px
+    letter-spacing: 0.2px
+    color: #6e6f71
+    margin-bottom: 10px
+.pharm-places-wrapper,
+.vacancy-places-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    width: 945px
+    margin-right: 15px
+    padding-left: 15px
+    @media screen and (max-width: 1440px)
+        width: 98%
+    @media screen and (max-width: 1110px)
+        margin-bottom: 15px
+.pharm-place,
+.vacancy-place
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    color: #154727
+    width: 100%
+    border-top: 2px solid #79a247
+    min-height: 50px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 10px 0 10px 75px
+    cursor: pointer
+    position: relative
+.pharm-place:before
+    content: url(./img/pharmPoint.png)
+    position: absolute
+    left: 25px
+    top: 15px
+.vacancy-place:before
+    content: url(./img/iconVacancy.png)
+    position: absolute
+    left: 25px
+    top: 10px
+.pharm-place:after,
+.vacancy-place:after
+    content: url(./img/pharmCH.png)
+    position: absolute
+    right: 25px
+    top: 5px
+    @media screen and (max-width: 562px)
+        display: none
+.partnership-wrapper-logo
+    display: flex
+    margin: 15px 0
+.pharm-places-wrapper h3
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    color: #66952e
+    display: flex
+    align-items: flex-end
+    margin-left: 15px
+.pharm-placeP
+    color: #79a247
+    font-family: Helvetica
+    font-size: 18px
+    display: none
+.vacancy-placeP
+    color: #58595b
+    font-family: Helvetica
+    font-size: 18px
+    display: none
+.visible
+    display: block
+.vacancy-placeP>span
+    color: black
+.pharm-place:last-child,
+.vacancy-place:last-child
+
+    border-bottom: 2px solid #79a247
+#map 
+    width: 100%
+    height: 280px
+.social-links-wrapper
+    margin: 40px auto 20px
+    display: flex
+    justify-content: center
+    align-items: center
+.social-link1
+    background: url(./img/facebook.png)
+    width: 40px
+    height: 40px
+    margin: 0 10px 0 0
+.social-link2
+    background: url(./img/instag.png)
+    width: 40px
+    height: 40px
+    margin: 0 10px 0 0
+.social-link3
+    background: url(./img/twitter.png)
+    width: 40px
+    height: 40px
+    margin: 0 10px 0 0
+.social-link4
+    background: url(./img/telegr.png)
+    width: 40px
+    height: 40px
+    margin: 0 10px 0 0
+.copyright
+    margin: 0 auto
+.copyright p
+    font-family: Akrobat-SemiBold
+    color: #004116
+    font-size: 26px
+.news-promo-sell-positions
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+.news-promo-sell
+    background: #d6e9bc
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.news-promo-sell-position
+    margin-bottom: 20px
+.news-promo-sell h2
+    color: #66952e
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    margin: 10px 0 10px 0
+.news-photogallery,
+.news-text
+    display: flex
+    flex-direction: column
+    border-bottom: 2px solid #547c2c
+    padding: 5px 0 5px 15px
+    margin-right: 15px
+.news-photogallery-photos
+    display: flex
+    justify-content: space-between
+    align-items: center
+.news-photogallery-day,
+.news-photogallery-tittle
+    font-family: Akrobat-Bold
+    font-size: 18px
+.news-photogallery-day
+    color: black
+.news-photogallery-tittle
+    color: #4b7520
+.news-text-someNews
+    font-family: Helvetica
+    color: #6a6a6a
+    font-size: 18px
+.news-photo-text
+    display: block
+    min-height: 230px
+    border-bottom: 2px solid #547c2c
+    padding: 5px 0 5px 15px
+    margin-right: 15px
+.news-photo-text img
+    margin-right: 15px
+    height: 220px
+    float: left
+.newsInner
+    padding: 0 15px
+    min-height: 980px
+    border-bottom: 2px solid #547c2c
+    padding-bottom: 20px
+.news-photogallery-tittle span
+    color: black
+.newsInnerFirstPhoto
+    float: left
+    margin: 10px 15px 5px 0
+.photo-with-description
+    float: right
+    background: #d6e9bc
+    min-height: 365px
+.photo-with-description::after
+    content: ""
+    height: 1px
+    clear: both
+.photo-with-description p
+    font-family: Akrobat-Bold
+    font-size: 18px
+    color: #154727
+    padding: 5px 0 5px 10px
+.imgLinks
+    float: left
+    margin: 0 30px 15px 0
+.promo-blocks
+    padding: 0 15px
+    min-height: 340px
+.Hlinks
+    font-family: Akrobat-Bold
+    font-size: 24px
+    color: #4b7520
+    margin: 10px 0
+    display: block
+.promo-blocks p
+    font-family: Helvetica
+    font-size: 18px
+    color: #58595b
+    letter-spacing: 0.5px
+.promo-vygoda-main
+    width: 1440px
+    margin: 0 auto
+    padding: 0 15px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+.promo-vygoda-items-tittle
+    font-family: Helvetica
+    font-size: 18px
+    color: #154727
+    display: none
+    position: absolute
+    top: -20%
+    background: #d3e6b9
+    border: 1px solid #295739
+    padding: 10px
+    z-index: 10
+.promo-vygoda-items
+    cursor: pointer
+    margin-bottom: 30px
+    position: relative
+.promo-vygoda-items:hover .promo-vygoda-items-tittle
+    display: block
+.promo-vygoda-text
+    width: 1440px
+    margin: 0 auto 10px
+    border-bottom: 2px solid #547c2c
+.promo-vygoda-text h2
+    margin-bottom: 30px
+    font-family: Helvetica
+    font-size: 18px
+    color: #154727
+.promo-vygoda-text p
+    font-family: Helvetica
+    font-size: 18px
+    color: #58595b
+    margin-bottom: 15px
+.vacancy-right-information
+    width: 100%
+    background: #d6e9bc
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 15px 0
+    padding-bottom: 30px
+.vacancy-right-information h3
+    font-family: Akrobat-SemiBold
+    font-size: 32px
+    color: #154727
+    margin: 20px auto
+.vacancy-right-information img
+    margin-bottom: 10px
+    width: 90%
+    height: 90%
+.vacancy-button
+    height: 50px
+    background: #66952e
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    color: #fefffe
+    text-transform: uppercase
+    margin: -80px 0 0 0
+    padding: 0 15px
+    border-radius: 5px
+.vacancy-about
+    color: #58595b
+    font-family: Helvetica
+    font-size: 18px
+    padding: 0 15px
+    margin-bottom: 15px
+.didntfindvacancy
+    font-family: Helvetica
+    font-size: 18px
+    color: #154727
+    text-align: center
+    margin: 30px auto
+.contacts
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+    margin-right: 15px
+    margin-top: 30px
+.contacts-address,
+.contacts-phone,
+.contacts-email
+    width: 33%
+    display: flex
+    justify-content: center
+    align-items: flex-start
+.wrapper-forImg
+    margin: 15px
+    min-height: 100px
+.wrapper-for-text
+    margin: 15px
+.wrapper-for-text p
+    font-family: Helvetica
+    font-size: 16px
+    color: #58595b
+.contacts-place
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: Akrobat-SemiBold
+    font-size: 36px
+    color: #004115
+    margin: 0 15px 10px 0
+    padding: 0 15px 10px 0
+    border-bottom: 1px solid #66952e
+.contacts-form
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+.form-left
+    width: 45%
+    display: flex
+    flex-direction: column
+.form-left input
+    width: 95%
+    margin: 20px 20px 0 0
+    height: 60px
+    border: 2px solid #8ea873
+    padding-left: 20px
+    font-family: Helvetica
+    font-size: 16px
+    color: #58595b
+textarea
+    width: 53%
+    margin: 20px 15px 0 0
+    resize: none
+    font-family: Helvetica
+    font-size: 16px
+    color: #58595b
+    padding: 20px 0 0 20px
+    border: 2px solid #8ea873
+.contacts-form-button
+    background: #66952e
+    border: none
+    width: 160px
+    height: 50px
+    border-radius: 5px
+    color: #ecf2e6
+    font-family: Akrobat-SemiBold
+    font-size: 24px
+    margin-top: 20px
+    margin-left: 65%
+.cooperation-icons-wrapper
+    display: flex
+    justify-content: space-around
+    margin: 10px 30px 0 0
+    border-bottom: 1px solid #739e3f
+    padding-bottom: 20px
+.cooperation-icons-wrapper p
+    font-family: Helvetica
+    font-size: 18px
+    color: #044419
+    text-align: center
+.cooperation-about
+    font-family: Helvetica
+    font-size: 18px
+    color: #5a5a5c
+    text-align: center
+    padding: 0 15px
+    margin: 20px 0 20px 0
+
+.about-promo
+    width: 90%
+    margin: 15px
+    overflow: hidden
+    position: relative
+    @media screen and (max-width: 1000px)
+        width: 70%
+.about-promo img
+    transition: all 2s ease
+.about-promo:hover .about-tittle
+    display: block
+.about-promo:hover img
+    transform: scale(1.1)
+.about-tittle
+    font-family: Helvetica
+    font-size: 18px
+    color: #154727
+    display: none
+    position: absolute
+    top: 10px
+    right: 0
+    background: #d3e6b9
+    border: 1px solid #295739
+    padding: 10px
+    z-index: 10
+.about-promo img
+    @media screen and (max-width: 1440px)
+        width: 100%
