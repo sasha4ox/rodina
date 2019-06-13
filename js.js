@@ -25,16 +25,12 @@
             })
             marker.addListener("click", function(){
                 InfoWindow.open(myMap,marker);
-            //     if (this.icon==="img/pin.svg"){
-            //     this.setIcon("img/pinHover.svg")
-            // }else { this.setIcon("img/pin.svg")}
             })
         }
        
 }
 window.onload = function(){
 let windowWidth = document.documentElement.clientWidth;
-console.log(windowWidth)
 
 //slider for social icons
 if(windowWidth >1400){
@@ -123,7 +119,6 @@ let vacancy = document.getElementsByClassName("vacancy-place");
 Array.from(vacancy).forEach(x=>{
     x.addEventListener("click", function(x){
         let curentDiv = x.target;
-        console.log(curentDiv)
         let p = curentDiv.getElementsByClassName("vacancy-placeP")
         Array.from(p).forEach(x=>{
             if(x.classList.contains("visible")){
@@ -136,30 +131,5 @@ Array.from(vacancy).forEach(x=>{
     })
 })
 
-
-// data-slick='{"slidesToShow": 6, "slidesToScroll": 1}'
-// let button = document.getElementById("button");
-// let aside = document.getElementById("aside");
-// let hiddenBar = document.getElementById("hiddenBar");
-// let map = document.getElementById("map");
-// button.classList.remove("buttonHidden");
-// aside.classList.remove("asideHidden");
-// hiddenBar.classList.remove("hiddenBar");
-
-// button.addEventListener("click",function(){
-//     if (button.classList.contains("buttonHidden")){
-//         button.classList.remove("buttonHidden");
-//         aside.classList.remove("asideHidden");
-//         hiddenBar.classList.add("hiddenBarHiden");
-//         map.style.width= "68.75%"
-//     }else {
-//         button.classList.add("buttonHidden");
-//         aside.classList.add("asideHidden");
-//         hiddenBar.classList.remove("hiddenBarHiden");
-//         hiddenBar.classList.add("hiddenBar");
-//        map.style.width= "95%"
-//     }
-   
-// })
 }
     

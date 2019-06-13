@@ -873,16 +873,6 @@ input[type="email"] {
 input[type="email"]:focus {
   border: 2px solid #a1c532; }
 
-input[type="button"] {
-  background: #66952e;
-  width: 320px;
-  height: 50px;
-  border-radius: 5px;
-  color: #fefffe;
-  font-family: Akrobat-SemiBold;
-  font-size: 26px;
-  margin-bottom: 35px; }
-
 .about-team-subscribe-right-wrapper h2 {
   color: #66952e;
   font-family: Akrobat-SemiBold;
@@ -1462,3 +1452,19 @@ textarea {
 @media screen and (max-width: 1440px) {
   .about-promo img {
     width: 100%; } }
+
+.form-subs {
+  display: flex;
+  flex-direction: column; }
+
+.button-subscribe {
+  cursor: pointer;
+  background: #66952e;
+  width: 320px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: #fefffe;
+  font-family: Akrobat-SemiBold;
+  font-size: 26px;
+  margin-bottom: 35px; }
