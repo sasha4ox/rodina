@@ -131,5 +131,16 @@ Array.from(vacancy).forEach(x=>{
     })
 })
 
+// open menu
+let menu = document.getElementById("menu-button");
+let isopen = document.getElementById("isopen");
+menu.addEventListener("click",function(e){
+    e.preventDefault();
+    if(isopen.classList.contains("isopen")){
+        isopen.classList.remove("isopen")
+    }else{
+        isopen.classList.add("isopen")
+    }
+})
 }
     
