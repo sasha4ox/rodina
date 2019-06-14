@@ -603,7 +603,7 @@ main h1 {
 .news {
   width: 1920px;
   margin: 0 auto;
-  background: url(./img/bgforNews.png); }
+  background: url(./img/bgForNews.png); }
   @media screen and (max-width: 1440px) {
     .news {
       width: 95%; } }
