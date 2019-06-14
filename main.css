@@ -70,6 +70,12 @@ header {
   font-size: 20px;
   letter-spacing: 1px;
   margin: 0 15px 0 0; }
+  @media screen and (max-width: 415px) {
+    .header-text {
+      width: 35%;
+      font-size: 18px;
+      margin: 0;
+      padding-left: 15px; } }
 
 .active {
   color: red; }
