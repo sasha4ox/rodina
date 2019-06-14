@@ -1425,7 +1425,8 @@ input[type="email"]:focus {
   margin-top: 30px; }
   @media screen and (max-width: 720px) {
     .contacts {
-      margin-right: 0px; } }
+      margin-right: 0px;
+      flex-direction: column; } }
 
 .contacts-address,
 .contacts-phone,
@@ -1438,7 +1439,9 @@ input[type="email"]:focus {
     .contacts-address,
     .contacts-phone,
     .contacts-email {
-      flex-direction: column; } }
+      flex-direction: column;
+      width: 90%;
+      align-items: center; } }
 
 .wrapper-forImg {
   margin: 15px;
@@ -1449,6 +1452,9 @@ input[type="email"]:focus {
 
 .wrapper-for-text {
   margin: 15px; }
+  @media screen and (max-width: 720px) {
+    .wrapper-for-text {
+      text-align: center; } }
 
 .wrapper-for-text p {
   font-family: Helvetica;
