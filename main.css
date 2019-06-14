@@ -113,6 +113,9 @@ header {
   @media screen and (max-width: 1440px) {
     .nav-header {
       width: 80%; } }
+  @media screen and (max-width: 1212px) {
+    .nav-header {
+      margin: 0 auto; } }
   @media screen and (max-width: 595px) {
     .nav-header {
       width: 95%; } }
@@ -138,7 +141,8 @@ header {
   height: 50px;
   width: 100%;
   position: relative;
-  display: none; }
+  display: none;
+  cursor: pointer; }
   @media screen and (max-width: 1212px) {
     .menu-button {
       display: flex;
@@ -511,7 +515,7 @@ main h1 {
   width: 45px;
   height: 86px;
   border: none;
-  margin-rught: 15px;
+  margin-right: 15px;
   cursor: pointer;
   position: absolute;
   top: 35%;
