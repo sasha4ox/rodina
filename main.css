@@ -275,13 +275,42 @@ footer {
 
 .main-banner {
   width: 1440px;
+  height: 100%;
   max-height: 524px;
   margin: 0 auto;
   background: #ccc;
   overflow: hidden; }
   @media screen and (max-width: 1440px) {
     .main-banner {
-      width: 90%; } }
+      width: 90%;
+      max-height: 460px; } }
+  @media screen and (max-width: 1270px) {
+    .main-banner {
+      max-height: 405px; } }
+  @media screen and (max-width: 1100px) {
+    .main-banner {
+      max-height: 360px; } }
+  @media screen and (max-width: 945px) {
+    .main-banner {
+      max-height: 310px; } }
+  @media screen and (max-width: 710px) {
+    .main-banner {
+      max-height: 225px; } }
+  @media screen and (max-width: 650px) {
+    .main-banner {
+      max-height: 205px; } }
+  @media screen and (max-width: 550px) {
+    .main-banner {
+      max-height: 180px; } }
+  @media screen and (max-width: 480px) {
+    .main-banner {
+      max-height: 160px; } }
+  @media screen and (max-width: 408px) {
+    .main-banner {
+      max-height: 130px; } }
+  @media screen and (max-width: 360px) {
+    .main-banner {
+      max-height: 115px; } }
 
 .main-banner-link img {
   width: 100%;
