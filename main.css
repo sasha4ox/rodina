@@ -15,6 +15,9 @@ a {
 .wrapper-for-header {
   width: 1920px;
   margin: 0 auto; }
+  @media screen and (max-width: 1920px) {
+    .wrapper-for-header {
+      width: 100%; } }
   @media screen and (max-width: 1440px) {
     .wrapper-for-header {
       width: 100%; } }
@@ -40,6 +43,9 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: flex-end; }
+  @media screen and (max-width: 1920px) {
+    .header-phone {
+      width: 100%; } }
   @media screen and (max-width: 1440px) {
     .header-phone {
       width: 100%; } }
@@ -102,6 +108,9 @@ header {
   display: flex;
   justify-content: flex-end;
   position: relative; }
+  @media screen and (max-width: 1920px) {
+    .nav-wrapper {
+      width: 100%; } }
   @media screen and (max-width: 1440px) {
     .nav-wrapper {
       width: 100%; } }
@@ -110,6 +119,9 @@ header {
   width: 1170px;
   height: 100%;
   position: relative; }
+  @media screen and (max-width: 1920px) {
+    .nav-header {
+      width: 80%; } }
   @media screen and (max-width: 1440px) {
     .nav-header {
       width: 80%; } }
@@ -197,6 +209,9 @@ header {
 .wrapper-for-footer {
   width: 1920px;
   margin: 0 auto; }
+  @media screen and (max-width: 1920px) {
+    .wrapper-for-footer {
+      width: 100%; } }
   @media screen and (max-width: 1440px) {
     .wrapper-for-footer {
       width: 100%; } }
@@ -219,6 +234,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 1920px) {
+    .footer-nav-wrapper {
+      width: 100%; } }
   @media screen and (max-width: 1440px) {
     .footer-nav-wrapper {
       width: 80%; } }
@@ -264,6 +282,9 @@ footer {
   background-position: 0 0;
   position: relative;
   padding-bottom: 200px; }
+  @media screen and (max-width: 1920px) {
+    .main-banner-wrapper {
+      width: 100%; } }
   @media screen and (max-width: 1440px) {
     .main-banner-wrapper {
       width: 100%; } }
@@ -347,6 +368,9 @@ main {
   width: 1920px;
   margin: 0 auto;
   background: #fff; }
+  @media screen and (max-width: 1920px) {
+    main {
+      width: 100%; } }
   @media screen and (max-width: 1440px) {
     main {
       width: 100%; } }
@@ -608,6 +632,9 @@ main h1 {
   width: 1920px;
   margin: 0 auto;
   background: url(./img/bgForNews.png); }
+  @media screen and (max-width: 1920px) {
+    .news {
+      width: 95%; } }
   @media screen and (max-width: 1440px) {
     .news {
       width: 95%; } }
@@ -674,15 +701,6 @@ main h1 {
   @media screen and (max-width: 1440px) {
     .about-main {
       width: 100%; } }
-
-.about-main h1 {
-  font-family: Akrobat-SemiBold;
-  font-size: 60px;
-  height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #4b7520; }
 
 .about-main-wrapper {
   width: 100%;
@@ -983,6 +1001,11 @@ input[type="email"]:focus {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px; }
+  @media screen and (max-width: 960px) {
+    .about-promo-sell-positions {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 .about-promo-sell-position {
   width: 450px;
@@ -990,6 +1013,9 @@ input[type="email"]:focus {
   @media screen and (max-width: 1440px) {
     .about-promo-sell-position {
       width: 32%; } }
+  @media screen and (max-width: 960px) {
+    .about-promo-sell-position {
+      width: 80%; } }
 
 .about-promo-sell-position img {
   width: 100%;
@@ -1029,6 +1055,18 @@ input[type="email"]:focus {
   @media screen and (max-width: 1440px) {
     .pharmH1 {
       width: 100%; } }
+  @media screen and (max-width: 1140px) {
+    .pharmH1 {
+      margin-top: 140px; } }
+  @media screen and (max-width: 595px) {
+    .pharmH1 {
+      margin: 0 auto; } }
+  @media screen and (max-width: 458px) {
+    .pharmH1 {
+      font-size: 50px; } }
+  @media screen and (max-width: 353px) {
+    .pharmH1 {
+      font-size: 45px; } }
 
 .pharm-main-wrapper-left-about {
   width: 945px;
@@ -1413,9 +1451,15 @@ input[type="email"]:focus {
 
 .vacancy-right-information h3 {
   font-family: Akrobat-SemiBold;
-  font-size: 32px;
+  font-size: 28px;
   color: #154727;
   margin: 20px auto; }
+  @media screen and (max-width: 420px) {
+    .vacancy-right-information h3 {
+      font-size: 22px; } }
+  @media screen and (max-width: 350px) {
+    .vacancy-right-information h3 {
+      font-size: 20px; } }
 
 .vacancy-right-information img {
   margin-bottom: 10px;
@@ -1527,7 +1571,8 @@ input[type="email"]:focus {
   padding-left: 20px;
   font-family: Helvetica;
   font-size: 16px;
-  color: #58595b; }
+  color: #58595b;
+  background: #fff; }
 
 textarea {
   width: 53%;

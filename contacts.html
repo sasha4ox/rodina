@@ -21,7 +21,7 @@
             </div>
             <div class="nav-wrapper100">
                 <div class="nav-wrapper">
-                    <a href="#"> <img src="./img/logo.png" class="logo" alt=""></a>
+                    <a href="index.html"> <img src="./img/logo.png" class="logo" alt=""></a>
                     <nav class="nav-header" id="isopen" onclick="open"> 
                         <a href="" class="menu-button" id="menu-button">Меню</a> 
                         <ul>
@@ -103,11 +103,11 @@
                     
                     <div class="contacts-form">
                         <div class="contacts-place">НАДІСЛАТИ ПОВІДОМЛЕННЯ</div>
-                        <form action="" class="contacts-form">
+                        <form action="" class="contacts-form" id="contactsForm">
                             <div class="form-left">
-                                <input type="text" name="name" id="" placeholder="Ім'я">
-                                <input type="contacts-email" name="" id="" placeholder="E-mail">
-                                <input type="text" name="about" id="" placeholder="Тема" >
+                                <input type="text" name="name" minlength="3" id="" placeholder="Ім'я"required >
+                                <input type="email" name="email" id="" placeholder="E-mail"required >
+                                <input type="text" name="about" id="" placeholder="Тема" required >
                             </div>
                                 <textarea name="textarea" id="" cols="30" rows="10" placeholder="Повідомлення"></textarea>
                                 <button type="submit" class="contacts-form-button">НАДІСЛАТИ</button>
@@ -200,6 +200,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick/slick.min.js"></script>
         <script src="js.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_g21ubU5otPA3GNho90m_Z1aGSXgOyXs&callback=initMap"
 async defer></script>   
     </body>

@@ -1,61 +1,31 @@
-@font-face{
-    font-family: 'Akrobat-Black';
-    src: url(./Akrobat-Black.otf);
-    font-style: normal;
-    font-weight: normal
-}
-
-@font-face{
+@font-face {
     font-family: 'Akrobat-Bold';
-    src: url(./Akrobat-Bold.otf);
+    src: url('Akrobat-Bold.eot');
+    src: url('Akrobat-Bold.eot?#iefix') format('embedded-opentype'),
+         url('Akrobat-Bold.ttf') format('truetype'),
+         url('Akrobat-Bold.woff') format('woff'),
+         url('Akrobat-Bold.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
-    font-weight: normal
 }
-@font-face{
-    font-family: 'Akrobat-ExtraBold';
-    src: url(./Akrobat-ExtraBold.otf);
-    font-style: normal;
-    font-weight: normal
-}
-@font-face{
-    font-family: 'Akrobat-ExtraLight';
-    src: url(./Akrobat-ExtraLight.otf);
-    font-style: normal;
-    font-weight: normal
-}
-@font-face{
-    font-family: 'Akrobat-Light';
-    src: url(./Akrobat-Light.otf);
-    font-style: normal;
-    font-weight: normal
-}
-@font-face{
-    font-family: 'Akrobat-Regular';
-    src: url(./Akrobat-Regular.otf);
-    font-style: normal;
-    font-weight: normal
-}
-@font-face{
+@font-face {
     font-family: 'Akrobat-SemiBold';
-    src: url(./Akrobat-SemiBold.otf);
+    src: url('Akrobat-SemiBold.eot');
+    src: url('Akrobat-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('Akrobat-SemiBold.ttf') format('truetype'),
+         url('Akrobat-SemiBold.woff') format('woff'),
+         url('Akrobat-SemiBold.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
-    font-weight: normal
-}
-@font-face{
-    font-family: 'Akrobat-Thin';
-    src: url(./Akrobat-Thin.otf);
-    font-style: normal;
-    font-weight: normal
-}
-@font-face{
+  }
+  
+@font-face {
     font-family: 'Helvetica';
-    src: url(./Helvetica.otf);
+    src: url('Helvetica-Regular.eot');
+    src: url('Helvetica-Regular.eot?#iefix') format('embedded-opentype'),
+         url('Helvetica-Regular.ttf') format('truetype'),
+         url('Helvetica-Regular.woff') format('woff'),
+         url('Helvetica-Regular.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
-    font-weight: normal
-}
-@font-face{
-    font-family: 'HelveticaBold';
-    src: url(./HelveticaBold.ttf);
-    font-style: normal;
-    font-weight: normal
-}
+  }
