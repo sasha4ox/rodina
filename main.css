@@ -10,6 +10,7 @@ a {
   text-decoration: none;
   font-family: Akrobat-SemiBold;
   font-size: 26px;
+  font-weight: lighter;
   color: #154727; }
 
 .wrapper-for-header {
@@ -53,7 +54,8 @@ header {
 .header-phone-div {
   width: 409px;
   height: 50px;
-  display: flex; }
+  display: flex;
+  opacity: 0; }
 
 .header-phone-p {
   height: 100%;
@@ -191,7 +193,7 @@ header {
   top: -35px;
   left: 0;
   z-index: 10; }
-  @media screen and (max-width: 595px) {
+  @media screen and (max-width: 855px) {
     .logo {
       display: none; } }
 
@@ -251,6 +253,7 @@ footer {
   align-items: center;
   height: 100%;
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 26px;
   color: #154727; }
   @media screen and (max-width: 1220px) {
@@ -299,6 +302,7 @@ footer {
   bottom: 0; }
 
 .main-banner {
+  position: relative;
   width: 1440px;
   height: 100%;
   max-height: 524px;
@@ -362,6 +366,7 @@ footer {
   text-align: center;
   font-family: Akrobat-SemiBold;
   font-size: 26px;
+  font-weight: lighter;
   color: #004116; }
 
 main {
@@ -378,6 +383,7 @@ main {
 main h1 {
   color: #ed1c24;
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   height: 65px;
   display: flex;
@@ -487,6 +493,7 @@ main h1 {
 
 .our-mission-text h2 {
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   color: #154727; }
 
@@ -531,8 +538,68 @@ main h1 {
   top: 35%;
   left: 2%; }
 
-.prev:focus {
+.prev:focus,
+.next:focus,
+.next-banner:focus,
+.Back-banenr:focus {
   outline: none; }
+
+.next-banner {
+  background: url(./img/next.svg) no-repeat;
+  width: 100px;
+  height: 100px;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 70%;
+  right: 7%;
+  z-index: 100; }
+
+.Back-banenr {
+  background: url(./img/back.svg) no-repeat;
+  width: 100px;
+  height: 100px;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 70%;
+  left: 7%;
+  z-index: 100; }
+
+@media screen and (min-width: 1740px) {
+  .Back-banenr {
+    left: 15%; } }
+
+@media screen and (min-width: 1740px) {
+  .next-banner {
+    right: 15%; } }
+
+@media screen and (max-width: 1150px) {
+  .Back-banenr,
+  .next-banner {
+    bottom: 83%; } }
+
+@media screen and (max-width: 850px) {
+  .Back-banenr,
+  .next-banner {
+    bottom: 86%; } }
+
+@media screen and (max-width: 644px) {
+  .Back-banenr,
+  .next-banner {
+    bottom: 88%; } }
+
+@media screen and (max-width: 470px) {
+  .Back-banenr,
+  .next-banner {
+    bottom: 90%; } }
+
+@media screen and (max-width: 422px) {
+  .Back-banenr,
+  .next-banner {
+    bottom: 91%; } }
 
 .next {
   background: url(./img/next.png) no-repeat;
@@ -544,9 +611,6 @@ main h1 {
   position: absolute;
   top: 35%;
   right: 2%; }
-
-.next:focus {
-  outline: none; }
 
 @media screen and (max-width: 524px) {
   .wrapper-for-social-program {
@@ -604,6 +668,7 @@ main h1 {
 
 .AboutUs-text h2 {
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   color: #154727; }
 
@@ -641,6 +706,7 @@ main h1 {
 
 .news h2 {
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   color: #154727;
   height: 70px;
@@ -763,6 +829,7 @@ main h1 {
 
 .about-main-wrapper-left-our-values h2 {
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   color: #154727;
   height: 60px;
@@ -780,6 +847,7 @@ main h1 {
 .about-main-wrapper-left-our-values-wrapper h3 {
   font-family: Akrobat-SemiBold;
   font-size: 36px;
+  font-weight: lighter;
   color: #66952e; }
 
 .about-main-wrapper-left-our-values-wrapper p {
@@ -821,6 +889,7 @@ main h1 {
 
 .about-main-wrapper-right-promo h3 {
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   color: #154727;
   margin: 15px auto; }
@@ -863,6 +932,7 @@ main h1 {
 
 .about-main-wrapper-right-lastNews h3 {
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   color: #154727;
   margin-bottom: 20px; }
@@ -878,6 +948,7 @@ main h1 {
 
 .about-main-wrapper-right-information h3 {
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   color: #154727; }
   @media screen and (max-width: 820px) {
@@ -919,6 +990,7 @@ main h1 {
 .about-team-subscribe-left h2 {
   color: #66952e;
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   height: 65px;
   display: flex;
@@ -969,6 +1041,7 @@ input[type="email"]:focus {
 .about-team-subscribe-right-wrapper h2 {
   color: #66952e;
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   margin: 10px 0 35px 0; }
   @media screen and (max-width: 1000px) {
@@ -980,6 +1053,7 @@ input[type="email"]:focus {
   text-align: center;
   color: #154727;
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 30px;
   margin-bottom: 25px; }
 
@@ -1028,6 +1102,7 @@ input[type="email"]:focus {
 .about-promo-sell h2 {
   color: #66952e;
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   margin: 10px 0 20px 0; }
 
@@ -1045,6 +1120,7 @@ input[type="email"]:focus {
 
 .pharmH1 {
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 60px;
   width: 1440px;
   color: #4b7520;
@@ -1111,6 +1187,7 @@ input[type="email"]:focus {
 .pharm-place,
 .vacancy-place {
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   color: #154727;
   width: 100%;
@@ -1152,6 +1229,7 @@ input[type="email"]:focus {
 
 .pharm-places-wrapper h3 {
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   color: #66952e;
   display: flex;
@@ -1159,10 +1237,11 @@ input[type="email"]:focus {
   margin-left: 15px; }
 
 .pharm-placeP {
-  color: #79a247;
+  color: #58595b;
   font-family: Helvetica;
   font-size: 18px;
-  display: none; }
+  display: none;
+  margin-top: 5px; }
 
 .vacancy-placeP {
   color: #58595b;
@@ -1220,7 +1299,8 @@ input[type="email"]:focus {
 .copyright p {
   font-family: Akrobat-SemiBold;
   color: #004116;
-  font-size: 26px; }
+  font-size: 26px;
+  font-weight: lighter; }
 
 .news-promo-sell-positions {
   display: flex;
@@ -1255,7 +1335,8 @@ input[type="email"]:focus {
   color: #66952e;
   font-family: Akrobat-SemiBold;
   font-size: 36px;
-  margin: 10px 0 10px 0; }
+  margin: 10px 0 10px 0;
+  font-weight: lighter; }
 
 .news-photogallery,
 .news-text {
@@ -1267,15 +1348,21 @@ input[type="email"]:focus {
 
 .news-photogallery-photos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center; }
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1100px) {
     .news-photogallery-photos {
       flex-direction: column; } }
 
+.news-photogallery-photo {
+  width: 33%; }
+  @media screen and (max-width: 1100px) {
+    .news-photogallery-photo {
+      width: 90%; } }
+
 .news-photogallery-photos img {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   margin-top: 10px; }
 
 .news-photogallery-day,
@@ -1453,7 +1540,8 @@ input[type="email"]:focus {
   font-family: Akrobat-SemiBold;
   font-size: 28px;
   color: #154727;
-  margin: 20px auto; }
+  margin: 20px auto;
+  font-weight: lighter; }
   @media screen and (max-width: 420px) {
     .vacancy-right-information h3 {
       font-size: 22px; } }
@@ -1544,6 +1632,7 @@ input[type="email"]:focus {
   justify-content: center;
   align-items: center;
   font-family: Akrobat-SemiBold;
+  font-weight: lighter;
   font-size: 36px;
   color: #004115;
   margin: 0 15px 10px 0;
@@ -1596,6 +1685,7 @@ textarea {
   color: #ecf2e6;
   font-family: Akrobat-SemiBold;
   font-size: 24px;
+  font-weight: lighter;
   margin-top: 20px;
   margin-left: 65%; }
 
@@ -1678,4 +1768,5 @@ textarea {
   color: #fefffe;
   font-family: Akrobat-SemiBold;
   font-size: 26px;
+  font-weight: lighter;
   margin-bottom: 35px; }

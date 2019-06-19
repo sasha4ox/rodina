@@ -92,10 +92,11 @@ if(windowWidth >1400){
 
 // banner slider
 $('.main-banner').slick({
-    autoplay:true,
-    arrows: false,
+    autoplay:false,
+    arrows: true,
     autoplaySpeed: 2000,
-    nextArrow: $('.main-banner')
+    prevArrow: $('.Back-banenr'),
+    nextArrow: $('.next-banner'),
 });
 
 // click on page ourpharmacies
