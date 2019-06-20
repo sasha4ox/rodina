@@ -259,6 +259,9 @@ footer {
     .nav-footer > ul {
       flex-wrap: wrap; } }
 
+.nav-footer ul li > a:hover {
+  color: red; }
+
 @media screen and (max-width: 1220px) {
   .nav-footer ul li > a {
     font-size: 20px; } }
@@ -457,6 +460,9 @@ main h1 {
   text-transform: uppercase;
   border-radius: 5px;
   margin-bottom: 20px; }
+
+.button-more:hover {
+  box-shadow: 1px 1px 2px 1px #154727; }
 
 .our-mission {
   width: 1440px;
@@ -911,6 +917,14 @@ main h1 {
     .about-main-wrapper-right-lastNew {
       width: 95%; } }
 
+.about-main-wrapper-right-lastNew:hover {
+  box-shadow: 5px 5px 5px 1px grey;
+  background: white;
+  width: 100%; }
+
+.about-main-wrapper-right-lastNew:hover p {
+  margin: 5px; }
+
 .about-main-wrapper-right-lastNew p {
   min-height: 130px;
   font-family: Helvetica;
@@ -1272,6 +1286,10 @@ input[type="email"]:focus {
   width: 100%;
   height: 280px; }
 
+.social-links-wrapper a:hover {
+  box-shadow: 1px 1px 2px 1px #154727;
+  border-radius: 7px; }
+
 .social-links-wrapper {
   margin: 40px auto 20px;
   display: flex;
@@ -1322,7 +1340,8 @@ input[type="email"]:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 10px; }
 
 .news-promo-sell-position {
   margin-bottom: 20px;
@@ -1576,6 +1595,9 @@ input[type="email"]:focus {
   padding: 0 15px;
   border-radius: 5px; }
 
+.vacancy-button:hover {
+  box-shadow: 1px 1px 2px 1px #154727; }
+
 .vacancy-about {
   color: #58595b;
   font-family: Helvetica;
@@ -1800,6 +1822,10 @@ textarea {
     .contacts-form-button {
       margin: 20px auto; } }
 
+.contacts-form-button:hover {
+  box-shadow: 1px 1px 2px 1px #154727;
+  cursor: pointer; }
+
 .cooperation-icons-wrapper {
   display: flex;
   justify-content: space-around;
@@ -1881,3 +1907,6 @@ textarea {
   font-size: 26px;
   font-weight: lighter;
   margin-bottom: 35px; }
+
+.button-subscribe:hover {
+  box-shadow: 1px 1px 2px 1px #154727; }
