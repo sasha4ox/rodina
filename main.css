@@ -54,8 +54,7 @@ header {
 .header-phone-div {
   width: 409px;
   height: 50px;
-  display: flex;
-  opacity: 0; }
+  display: flex; }
 
 .header-phone-p {
   height: 100%;
@@ -1127,7 +1126,7 @@ input[type="email"]:focus {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: flex-end; }
   @media screen and (max-width: 1440px) {
     .pharmH1 {
       width: 100%; } }
@@ -1143,6 +1142,15 @@ input[type="email"]:focus {
   @media screen and (max-width: 353px) {
     .pharmH1 {
       font-size: 45px; } }
+
+.pharmH1 span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 36px;
+  font-family: Akrobat-SemiBold;
+  font-weight: lighter;
+  color: #154727;
+  text-align: end; }
 
 .pharm-main-wrapper-left-about {
   width: 945px;
@@ -1470,7 +1478,7 @@ input[type="email"]:focus {
 
 .promo-vygoda-main {
   width: 1440px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0 15px;
   display: flex;
   flex-wrap: wrap;
@@ -1626,6 +1634,18 @@ input[type="email"]:focus {
   font-size: 16px;
   color: #58595b; }
 
+.vacancy-anket {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Akrobat-SemiBold;
+  font-weight: lighter;
+  font-size: 36px;
+  color: #004115;
+  margin: 80px 15px 10px 0;
+  padding: 0 15px 10px 0; }
+
 .contacts-place {
   width: 100%;
   display: flex;
@@ -1663,6 +1683,87 @@ input[type="email"]:focus {
   color: #58595b;
   background: #fff; }
 
+.floatP {
+  float: left;
+  margin-left: 43%;
+  margin-top: 30px;
+  margin-right: 10px;
+  font-family: Akrobat-Bold;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  color: #4b7520; }
+  @media screen and (max-width: 1444px) {
+    .floatP {
+      margin-left: 40%; } }
+  @media screen and (max-width: 1434px) {
+    .floatP {
+      margin-left: 39%; } }
+  @media screen and (max-width: 1400px) {
+    .floatP {
+      margin-left: 38%; } }
+  @media screen and (max-width: 1400px) {
+    .floatP {
+      margin-left: 36%; } }
+  @media screen and (max-width: 1334px) {
+    .floatP {
+      margin-left: 31%; } }
+  @media screen and (max-width: 1277px) {
+    .floatP {
+      margin-left: 30%; } }
+  @media screen and (max-width: 1224px) {
+    .floatP {
+      margin-left: 20%; } }
+  @media screen and (max-width: 1170px) {
+    .floatP {
+      margin-left: 43%; } }
+  @media screen and (max-width: 1100px) {
+    .floatP {
+      margin-left: 50%; } }
+  @media screen and (max-width: 690px) {
+    .floatP {
+      margin-left: 35%; } }
+  @media screen and (max-width: 521px) {
+    .floatP {
+      margin-left: 25%; } }
+  @media screen and (max-width: 442px) {
+    .floatP {
+      margin-left: 5%; } }
+
+.inputFile {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer; }
+
+.form-right {
+  width: 53%; }
+  @media screen and (max-width: 1170px) {
+    .form-right {
+      width: 100%; } }
+
+.buttonFile {
+  width: 160px;
+  height: 50px;
+  border: 2px solid #d3dc9b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-family: Akrobat-Bold;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  color: #4b7520; }
+
+.textareaVacancy {
+  height: 55%;
+  width: 100%; }
+  @media screen and (max-width: 1170px) {
+    .textareaVacancy {
+      width: 95%; } }
+
 textarea {
   width: 53%;
   margin: 20px 15px 0 0;
@@ -1687,7 +1788,11 @@ textarea {
   font-size: 24px;
   font-weight: lighter;
   margin-top: 20px;
-  margin-left: 65%; }
+  margin-left: 65%;
+  margin-bottom: 15px; }
+  @media screen and (max-width: 1110px) {
+    .contacts-form-button {
+      margin: 20px auto; } }
 
 .cooperation-icons-wrapper {
   display: flex;

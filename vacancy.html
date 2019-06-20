@@ -93,15 +93,36 @@
                                      Новоград-Волинський вул. Шевченка,43, т.(050)404 84 51</p>
                             </h2>
                          </div>
-                <p class="didntfindvacancy">Не знайшли вакансію, що підходить саме Вам? <br/>
+                <!-- <p class="didntfindvacancy">Не знайшли вакансію, що підходить саме Вам? <br/>
                     <br/>
-                        Надсилайте своє резюме на електронну пошту kadry@zr.if.ua</p>
+                        Надсилайте своє резюме на електронну пошту kadry@zr.if.ua</p> -->
+                        <div class="contacts-form">
+                                <div class="vacancy-anket" id="anketa">ЗАПОВНИТИ АНКЕТУ</div>
+                                <form enctype="multipart/form-data" method="post" class="contacts-form" id="vacancyForm">
+                                    <div class="form-left">
+                                        <input type="text" name="name" minlength="3" id="" placeholder="ПІП"required >
+                                        <input type="email" name="email" id="" placeholder="E-mail"required >
+                                        <input type="digits" name="about" minlength="9" id="" placeholder="Телфон" required >
+                                        <input type="text" name="about" minlength="3" id="" placeholder="Адреса" required >
+
+                                    </div>
+                                        <div class="form-right">
+                                                <textarea class="textareaVacancy" name="textarea" id="" cols="20" rows="5" placeholder="Супроводжувальний текст"></textarea>
+                                            <p class="floatP">Файл резюме:</p>
+                                            <div class="buttonFile">
+                                                <p>ПРИКРІПИТИ</p>
+                                                <input type="file" class="inputFile">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="contacts-form-button">НАДІСЛАТИ</button>
+                                </form>
+                            </div>
             </div>
             <div class="about-main-wrapper-right">
                 <div class="vacancy-right-information">
                     <h3>СТАНЬ ЧАСТИНОЮ НАШОЇ КОМАНДИ</h3>
                     <img src="./img/vacancy.png" alt="">
-                    <a href="contacts.html#contactsForm" class="vacancy-button">ЗАПОВНИТИ АНКЕТУ</a>
+                    <a href="vacancy.html#anketa" class="vacancy-button">ЗАПОВНИТИ АНКЕТУ</a>
                 </div>
                 <div class="about-main-wrapper-right-lastNews">
                     <h3>ОСТАННІ НОВИНИ</h3>
@@ -180,6 +201,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick/slick.min.js"></script>
   <script src="js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_g21ubU5otPA3GNho90m_Z1aGSXgOyXs&callback=initMap"
 async defer></script>
     </body>

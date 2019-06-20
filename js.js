@@ -150,6 +150,7 @@ $("#about").validate()
 $("#newsForm").validate()
 $("#newsInnerForm").validate()
 $("#FormsPromo").validate()
+$("#vacancyForm").validate()
 
 
 jQuery.extend(jQuery.validator.messages, {
@@ -160,7 +161,7 @@ jQuery.extend(jQuery.validator.messages, {
     date: "Please enter a valid date.",
     dateISO: "Please enter a valid date (ISO).",
     number: "Please enter a valid number.",
-    digits: "Please enter only digits.",
+    digits: "Введіть телефон формату 098-644-55-44-39",
     creditcard: "Please enter a valid credit card number.",
     equalTo: "Please enter the same value again.",
     accept: "Please enter a value with a valid extension.",
