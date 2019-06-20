@@ -1182,7 +1182,8 @@ input[type="email"]:focus {
   flex-direction: column;
   width: 945px;
   margin-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  margin-bottom: 15px; }
   @media screen and (max-width: 1440px) {
     .pharm-places-wrapper,
     .vacancy-places-wrapper {
