@@ -1635,6 +1635,11 @@ input[type="email"]:focus {
   font-size: 16px;
   color: #58595b; }
 
+.wrapper-for-text a {
+  font-family: Helvetica;
+  font-size: 16px;
+  color: #58595b; }
+
 .vacancy-anket {
   width: 100%;
   display: flex;
