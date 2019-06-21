@@ -132,6 +132,15 @@ Array.from(vacancy).forEach(x=>{
     x.addEventListener("click", function(x){
         let curentDiv = x.target;
         let p = curentDiv.getElementsByClassName("vacancy-placeP")
+        let span = curentDiv.getElementsByClassName("lineVertical")
+        Array.from(span).forEach(x=>{
+            if(x.classList.contains("offLine")){
+                x.classList.remove("offLine")
+            }else{
+                x.classList.add("offLine")
+            }
+        })
+
         Array.from(p).forEach(x=>{
             if(x.classList.contains("visible")){
                 x.classList.remove("visible")
