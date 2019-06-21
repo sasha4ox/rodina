@@ -357,12 +357,23 @@ footer {
       width: 80%; } }
   @media screen and (max-width: 1150px) {
     .main-icons-wrapper {
+      flex-wrap: wrap;
+      width: 98%;
+      align-items: center;
+      justify-content: space-around; } }
+  @media screen and (max-width: 392px) {
+    .main-icons-wrapper {
+      width: 80%;
       flex-direction: column;
       align-items: center; } }
 
 @media screen and (max-width: 1150px) {
   .main-icon {
     margin-top: 15px; } }
+
+.main-icon:hover img {
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px 2px black; }
 
 .main-icons-wrapper h3 {
   text-align: center;
@@ -464,6 +475,46 @@ main h1 {
 .button-more:hover {
   box-shadow: 1px 1px 2px 1px #154727; }
 
+.promo-block-wrapper-right {
+  position: relative;
+  border-bottom: 1px solid green; }
+
+.button-more-promo {
+  width: 160px;
+  height: 50px;
+  background: #66952e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fefffe;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px; }
+  @media screen and (max-width: 1346px) {
+    .button-more-promo {
+      position: relative;
+      bottom: 0;
+      right: 0;
+      margin-top: 15px; } }
+  @media screen and (max-width: 1100px) {
+    .button-more-promo {
+      position: absolute;
+      right: 10px;
+      bottom: 10px; } }
+  @media screen and (max-width: 926px) {
+    .button-more-promo {
+      position: relative;
+      bottom: 0;
+      right: 0;
+      margin-top: 15px; } }
+
+.button-more-promo:hover {
+  box-shadow: 1px 1px 2px 1px #154727; }
+
 .our-mission {
   width: 1440px;
   min-height: 400px;
@@ -557,7 +608,7 @@ main h1 {
   margin-right: 15px;
   cursor: pointer;
   position: absolute;
-  bottom: 70%;
+  bottom: 40%;
   right: 7%;
   z-index: 100; }
 
@@ -569,7 +620,7 @@ main h1 {
   margin-right: 15px;
   cursor: pointer;
   position: absolute;
-  bottom: 70%;
+  bottom: 40%;
   left: 7%;
   z-index: 100; }
 
@@ -581,30 +632,15 @@ main h1 {
   .next-banner {
     right: 15%; } }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 556px) {
   .Back-banenr,
   .next-banner {
-    bottom: 83%; } }
-
-@media screen and (max-width: 850px) {
-  .Back-banenr,
-  .next-banner {
-    bottom: 86%; } }
-
-@media screen and (max-width: 644px) {
-  .Back-banenr,
-  .next-banner {
-    bottom: 88%; } }
-
-@media screen and (max-width: 470px) {
-  .Back-banenr,
-  .next-banner {
-    bottom: 90%; } }
+    bottom: 25%; } }
 
 @media screen and (max-width: 422px) {
   .Back-banenr,
   .next-banner {
-    bottom: 91%; } }
+    bottom: 15%; } }
 
 .next {
   background: url(./img/next.png) no-repeat;
@@ -748,6 +784,9 @@ main h1 {
     .news-promo {
       width: 90%; } }
 
+.news-promo:hover {
+  box-shadow: 1px 1px 10px 2px black; }
+
 .news-promo img {
   width: 450px;
   border-bottom: 1px solid #ec2529;
@@ -876,6 +915,9 @@ main h1 {
   @media screen and (max-width: 1170px) {
     .about-main-wrapper-right {
       width: 95%; } }
+  @media screen and (max-width: 1000px) {
+    .about-main-wrapper-right {
+      display: none; } }
 
 .about-main-wrapper-right-promo {
   width: 100%;
@@ -1207,6 +1249,26 @@ input[type="email"]:focus {
     .vacancy-places-wrapper {
       margin-bottom: 15px; } }
 
+.lineGorizont {
+  width: 15px;
+  height: 2px;
+  background: #66952e;
+  position: absolute;
+  right: 25px;
+  top: 30px; }
+
+.lineVertical {
+  width: 2px;
+  height: 15px;
+  background: #66952e;
+  position: absolute;
+  right: 31px;
+  top: 24px;
+  transition: all ease 0.4s; }
+
+.offLine {
+  opacity: 0; }
+
 .pharm-place,
 .vacancy-place {
   font-family: Akrobat-SemiBold;
@@ -1221,7 +1283,8 @@ input[type="email"]:focus {
   justify-content: center;
   padding: 10px 0 10px 75px;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  padding-right: 50px; }
 
 .pharm-place:before {
   content: url(./img/pharmPoint.png);
@@ -1234,17 +1297,6 @@ input[type="email"]:focus {
   position: absolute;
   left: 25px;
   top: 10px; }
-
-.pharm-place:after,
-.vacancy-place:after {
-  content: url(./img/pharmCH.png);
-  position: absolute;
-  right: 25px;
-  top: 5px; }
-  @media screen and (max-width: 562px) {
-    .pharm-place:after,
-    .vacancy-place:after {
-      display: none; } }
 
 .partnership-wrapper-logo {
   display: flex;
@@ -1409,6 +1461,9 @@ input[type="email"]:focus {
   padding: 5px 0 5px 15px;
   margin-right: 15px; }
 
+.news-text:hover {
+  box-shadow: 1px 1px 10px 1px black; }
+
 .news-photogallery-photos {
   display: flex;
   justify-content: space-around;
@@ -1450,6 +1505,12 @@ input[type="email"]:focus {
   border-bottom: 2px solid #547c2c;
   padding: 5px 0 5px 15px;
   margin-right: 15px; }
+
+.news-photo-text:hover {
+  box-shadow: 1px 1px 20px 1px black; }
+
+.news-photo-text:hover .news-photogallery-tittle {
+  font-size: 22px; }
 
 .news-photo-text img {
   margin-right: 15px;
@@ -1501,18 +1562,34 @@ input[type="email"]:focus {
 
 .imgLinks {
   float: left;
-  margin: 0 30px 15px 0; }
+  margin: 0 30px 0px 0; }
+
+.imgLinks:hover {
+  box-shadow: 1px 1px 10px 1px black; }
+
+.wrapper-forbanner-slick {
+  height: 100%;
+  width: 100%;
+  position: relative; }
 
 .promo-blocks {
+  display: flex;
   padding: 0 15px;
-  min-height: 340px; }
-  @media screen and (max-width: 800px) {
+  min-height: 340px;
+  margin-top: 15px; }
+  @media screen and (max-width: 1346px) {
     .promo-blocks {
       display: flex;
       flex-direction: column; } }
+  @media screen and (max-width: 1100px) {
+    .promo-blocks {
+      flex-direction: row; } }
+  @media screen and (max-width: 926px) {
+    .promo-blocks {
+      flex-direction: column; } }
 
 @media screen and (max-width: 800px) {
-  .promo-blocks > a img {
+  .promo-blocks > div > a img {
     display: block;
     margin: 10px auto;
     width: 100%;
@@ -1524,6 +1601,9 @@ input[type="email"]:focus {
   color: #4b7520;
   margin: 10px 0;
   display: block; }
+
+.Hlinks:hover {
+  font-size: 26px; }
 
 .promo-blocks p {
   font-family: Helvetica;
@@ -1588,6 +1668,18 @@ input[type="email"]:focus {
   font-size: 18px;
   color: #58595b;
   margin-bottom: 15px; }
+
+.LinkToPDF {
+  font-family: Akrobat-SemiBold;
+  color: #66784e;
+  font-size: 22px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  display: block; }
+
+.LinkToPDF span {
+  border-bottom: 1px solid #66784e;
+  margin-right: 15px; }
 
 .vacancy-right-information {
   width: 100%;
