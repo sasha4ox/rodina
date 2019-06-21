@@ -1286,9 +1286,9 @@ input[type="email"]:focus {
   width: 100%;
   height: 280px; }
 
-.social-links-wrapper a:hover {
-  box-shadow: 1px 1px 2px 1px #154727;
-  border-radius: 7px; }
+.social-links-wrapper a:hover svg {
+  border-radius: 9px;
+  box-shadow: 1px 1px 5px 1px black; }
 
 .social-links-wrapper {
   margin: 40px auto 20px;
@@ -1297,28 +1297,63 @@ input[type="email"]:focus {
   align-items: center; }
 
 .social-link1 {
-  background: url(./img/facebook.png);
+  background: white;
+  border-radius: 15px;
   width: 40px;
   height: 40px;
   margin: 0 10px 0 0; }
+
+.social-link1 svg {
+  width: 40px;
+  height: 40px;
+  fill: #3b5998; }
 
 .social-link2 {
-  background: url(./img/instag.png);
+  background: white;
+  border-radius: 15px;
   width: 40px;
   height: 40px;
   margin: 0 10px 0 0; }
+
+.social-link2 svg {
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  fill: #E1306C; }
 
 .social-link3 {
-  background: url(./img/twitter.png);
+  background: white;
+  border-radius: 15px;
   width: 40px;
   height: 40px;
   margin: 0 10px 0 0; }
 
+.social-link3 svg {
+  width: 40px;
+  height: 40px;
+  fill: #0088cc; }
+
 .social-link4 {
-  background: url(./img/telegr.png);
   width: 40px;
   height: 40px;
   margin: 0 10px 0 0; }
+
+.social-link4 svg {
+  width: 40px;
+  height: 40px;
+  fill: #ff0000; }
+
+.social-link5 {
+  background: white;
+  border-radius: 15px;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 0 0; }
+
+.social-link5 svg {
+  width: 40px;
+  height: 40px;
+  fill: #8f5db7; }
 
 .copyright {
   margin: 0 auto; }
