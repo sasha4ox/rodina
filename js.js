@@ -33,66 +33,57 @@ window.onload = function(){
 let windowWidth = document.documentElement.clientWidth;
 
 //slider for social icons
-if(windowWidth >1400){
     $('.social-programs-wrapper').slick({
         autoplay:false,
         arrows: true,
         slidesToShow: 6,
         slidesToScroll: 1,
         prevArrow: $('.prev'),
-        nextArrow: $('.next')
-    });
-    
-}else if (windowWidth < 1400 && windowWidth>=1200){
-    $('.social-programs-wrapper').slick({
-        autoplay:false,
-        arrows: true,
+        nextArrow: $('.next'),
+        responsive: [
+    {
+      breakpoint: 1364,
+      settings: {
         slidesToShow: 5,
         slidesToScroll: 1,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next')
+      }
+    },
+    {
+        breakpoint: 1164,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 965,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 790,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 559,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2
+        }
+      },
+]
     });
-}else if (windowWidth < 1200 && windowWidth>=970){
-    $('.social-programs-wrapper').slick({
-        autoplay:false,
-        arrows: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next')
-    });
-}else if (windowWidth < 970 && windowWidth>=740){
-    $('.social-programs-wrapper').slick({
-        autoplay:false,
-        arrows: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next')
-    });
-}else if (windowWidth < 740 && windowWidth>=525){
-    $('.social-programs-wrapper').slick({
-        autoplay:false,
-        arrows: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next')
-    });
-}else if (windowWidth < 525){
-    $('.social-programs-wrapper').slick({
-        autoplay:false,
-        arrows: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next')
-    });
-}
+    
 
 // banner slider
 $('.main-banner').slick({
-    autoplay:false,
+    autoplay: true,
+    speed:1500,
     arrows: true,
     autoplaySpeed: 2000,
     prevArrow: $('.Back-banenr'),
@@ -103,6 +94,37 @@ $('.main-banner').slick({
 let pharm = document.getElementsByClassName("pharm-place");
 Array.from(pharm).forEach(x=>{
     x.addEventListener("click", function(x){
+        let allP = document.getElementsByClassName("pharm-placeP")
+        Array.from(allP).forEach(x=>{
+            x.classList.remove("visible")
+            let Allspan = document.getElementsByClassName("lineVertical")
+            Array.from(Allspan).forEach(x=>{
+             
+                    x.classList.remove("offLine")
+                
+            })
+        })   
+        
+//for span element for CLICK WORK ON PLUS 
+        if (x.target.parentNode.classList.contains("pharm-place")){
+            let p = x.target.parentNode.getElementsByClassName("pharm-placeP")
+            let span = x.target.parentNode.getElementsByClassName("lineVertical")
+            Array.from(span).forEach(x=>{
+                if(x.classList.contains("offLine")){
+                    x.classList.remove("offLine")
+                }else{
+                    x.classList.add("offLine")
+                }
+            })
+            Array.from(p).forEach(x=>{
+                if(x.classList.contains("visible")){
+                    x.classList.remove("visible")
+                }else{
+                    x.classList.add("visible")
+                }
+            })
+        }
+/////////
         let curentDiv = x.target;
         let p = curentDiv.getElementsByClassName("pharm-placeP")
         let span = curentDiv.getElementsByClassName("lineVertical")
@@ -113,15 +135,13 @@ Array.from(pharm).forEach(x=>{
                 x.classList.add("offLine")
             }
         })
-
-        
         Array.from(p).forEach(x=>{
-           
             if(x.classList.contains("visible")){
                 x.classList.remove("visible")
             }else{
                 x.classList.add("visible")
             }
+            
         })
         
     })
@@ -130,6 +150,41 @@ Array.from(pharm).forEach(x=>{
 let vacancy = document.getElementsByClassName("vacancy-place");
 Array.from(vacancy).forEach(x=>{
     x.addEventListener("click", function(x){
+
+        let allP = document.getElementsByClassName("vacancy-placeP")
+        Array.from(allP).forEach(x=>{
+            x.classList.remove("visible")
+            let Allspan = document.getElementsByClassName("lineVertical")
+            Array.from(Allspan).forEach(x=>{
+             
+                    x.classList.remove("offLine")
+                
+            })
+        })   
+        
+//for span element for CLICK WORK ON PLUS 
+        if (x.target.parentNode.classList.contains("vacancy-place")){
+            let p = x.target.parentNode.getElementsByClassName("vacancy-placeP")
+            let span = x.target.parentNode.getElementsByClassName("lineVertical")
+            Array.from(span).forEach(x=>{
+                if(x.classList.contains("offLine")){
+                    x.classList.remove("offLine")
+                }else{
+                    x.classList.add("offLine")
+                }
+            })
+            Array.from(p).forEach(x=>{
+                if(x.classList.contains("visible")){
+                    x.classList.remove("visible")
+                }else{
+                    x.classList.add("visible")
+                }
+            })
+        }
+/////////
+
+
+
         let curentDiv = x.target;
         let p = curentDiv.getElementsByClassName("vacancy-placeP")
         let span = curentDiv.getElementsByClassName("lineVertical")
@@ -163,7 +218,6 @@ menu.addEventListener("click",function(e){
         isopen.classList.add("isopen")
     }
 })
-console.log(windowWidth)
 
 $("#contactsForm").validate()
 $("#about").validate()
