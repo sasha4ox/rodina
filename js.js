@@ -265,11 +265,22 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
 console.log(document.getElementById("viber").getAttribute("href"))
 }
 
-    window.onscroll = function() {
-        let pageY = window.pageYOffset || document.documentElement.scrollTop;
-        let innerHeight = document.documentElement.clientHeight;
-        let buttonTop = document.getElementById("buttonForTop")
 
+// ease scroll to top
+    let t;
+function up() {
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+  if(top > 0) {
+    window.scrollBy(0,-100);
+    t = setTimeout('up()',20);
+  } else clearTimeout(t);
+  return false;
+}
+
+    window.onscroll = function() {
+    let pageY = window.pageYOffset || document.documentElement.scrollTop;
+    let innerHeight = document.documentElement.clientHeight;
+    let buttonTop = document.getElementById("buttonForTop")
         if(pageY>=innerHeight){
             buttonTop.classList.remove("buttonForTopInvisible")
         }else{
