@@ -424,7 +424,7 @@ footer {
 
 .main-banner {
   position: relative;
-  background: url(./img/pufff.svg);
+  background: url(./img/puff.svg) center center no-repeat;
   margin: 0 auto;
   overflow: hidden; }
   @media screen and (max-width: 1440px) {
@@ -461,9 +461,9 @@ footer {
 
 .main-banner-link {
   opacity: 0;
-  -webkit-transition: all ease 1s;
-  -o-transition: all ease 1s;
-  transition: all ease 1s; }
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s; }
 
 .main-banner-link img {
   width: 100%;
