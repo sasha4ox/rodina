@@ -89,6 +89,12 @@ $('.main-banner').slick({
     prevArrow: $('.Back-banenr'),
     nextArrow: $('.next-banner'),
 });
+(function ShowImg(){
+    let images = document.getElementsByClassName("main-banner-link");
+    Array.from(images).forEach(x=>{
+        x.style.opacity = "1"
+    })
+})()
 
 // click on page ourpharmacies
 let pharm = document.getElementsByClassName("pharm-place");

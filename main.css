@@ -396,6 +396,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   background: #a2c632 url(./img/BanBg.png) repeat-x;
+  background-size: contain;
   background-position: 0 0;
   position: relative;
   padding-bottom: 200px; }
@@ -423,8 +424,8 @@ footer {
 
 .main-banner {
   position: relative;
+  background: url(./img/pufff.svg);
   margin: 0 auto;
-  background: #ccc;
   overflow: hidden; }
   @media screen and (max-width: 1440px) {
     .main-banner {
@@ -457,6 +458,12 @@ footer {
   @media screen and (max-width: 360px) {
     .main-banner {
       max-height: 115px; } }
+
+.main-banner-link {
+  opacity: 0;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s; }
 
 .main-banner-link img {
   width: 100%;
