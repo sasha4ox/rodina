@@ -254,5 +254,26 @@ jQuery.extend(jQuery.validator.messages, {
     max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
     min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
 });
+
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)){
+    let viber = document.getElementById("viber");
+    let viberHref = viber.getAttribute("href").split("")
+    let news = viberHref.splice(8,4,"a","d","d")
+    let viberForMobile = viberHref.join("")
+    viber.setAttribute("href", viberForMobile)
 }
-    
+console.log(document.getElementById("viber").getAttribute("href"))
+}
+
+    window.onscroll = function() {
+        let pageY = window.pageYOffset || document.documentElement.scrollTop;
+        let innerHeight = document.documentElement.clientHeight;
+        let buttonTop = document.getElementById("buttonForTop")
+
+        if(pageY>=innerHeight){
+            buttonTop.classList.remove("buttonForTopInvisible")
+        }else{
+            buttonTop.classList.add("buttonForTopInvisible")
+        }
+        
+      }

@@ -2902,3 +2902,33 @@ textarea {
 .button-subscribe:hover {
   -webkit-box-shadow: 1px 1px 2px 1px #154727;
   box-shadow: 1px 1px 2px 1px #154727; }
+
+#buttonForTop {
+  background: url(./img/buttonTop.png);
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 50;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s; }
+  @media screen and (max-width: 600px) {
+    #buttonForTop {
+      background: url(./img/buttonTopSmall.png);
+      width: 40px;
+      height: 40px;
+      -webkit-border-radius: 7px;
+      border-radius: 7px; } }
+
+#buttonForTop:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 10px 1px black;
+  box-shadow: 1px 1px 10px 1px black; }
+
+.buttonForTopInvisible {
+  opacity: 0;
+  display: none; }
