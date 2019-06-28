@@ -1854,7 +1854,10 @@ input[type="email"]:focus {
   cursor: pointer;
   position: relative;
   padding-right: 50px;
-  z-index: 10; }
+  z-index: 10;
+  -webkit-transition: all ease 5s;
+  -o-transition: all ease 5s;
+  transition: all ease 5s; }
   @media screen and (max-width: 350px) {
     .pharm-place,
     .vacancy-place {
@@ -1897,18 +1900,31 @@ input[type="email"]:focus {
 .pharm-placeP {
   color: #58595b;
   font-family: Helvetica;
-  font-size: 18px;
-  display: none;
-  margin-top: 5px; }
+  font-size: 0px;
+  margin-top: 0px;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s; }
+
+.pharm-placeP a {
+  font-size: 0px; }
 
 .vacancy-placeP {
   color: #58595b;
   font-family: Helvetica;
-  font-size: 18px;
-  display: none; }
+  font-size: 0px;
+  display: none;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s; }
 
 .visible {
-  display: block; }
+  display: block;
+  font-size: 18px;
+  margin-top: 5px; }
+
+.visible a {
+  font-size: 23px; }
 
 .vacancy-placeP > span {
   color: black; }
