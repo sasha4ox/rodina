@@ -885,6 +885,9 @@ main h1 {
   bottom: 40%;
   right: 7%;
   z-index: 100; }
+  @media screen and (max-width: 450px) {
+    .next-banner {
+      background: url(./img/nextSmall.svg) no-repeat; } }
 
 .Back-banenr {
   background: url(./img/back.svg) no-repeat;
@@ -897,24 +900,39 @@ main h1 {
   bottom: 40%;
   left: 7%;
   z-index: 100; }
+  @media screen and (max-width: 450px) {
+    .Back-banenr {
+      background: url(./img/backSmall.svg) no-repeat; } }
 
 @media screen and (min-width: 1740px) {
   .Back-banenr {
     left: 0%; } }
 
+@media screen and (max-width: 450px) {
+  .Back-banenr {
+    left: 5%;
+    width: 50px;
+    height: 50px; } }
+
 @media screen and (min-width: 1740px) {
   .next-banner {
     right: 0%; } }
+
+@media screen and (max-width: 450px) {
+  .next-banner {
+    right: 5%;
+    width: 50px;
+    height: 50px; } }
 
 @media screen and (max-width: 556px) {
   .Back-banenr,
   .next-banner {
     bottom: 25%; } }
 
-@media screen and (max-width: 422px) {
+@media screen and (max-width: 450px) {
   .Back-banenr,
   .next-banner {
-    bottom: 15%; } }
+    bottom: 30%; } }
 
 .next {
   background: url(./img/next.png) no-repeat;
@@ -1163,6 +1181,10 @@ main h1 {
 @media screen and (max-width: 1440px) {
   .onlyAbout {
     width: 63%; } }
+
+@media screen and (max-width: 1170px) {
+  .onlyAbout {
+    width: 95%; } }
 
 .about-main-wrapper-left-about {
   width: 945px;
@@ -1527,6 +1549,9 @@ main h1 {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 15px 0 15px 0; }
+  @media screen and (max-width: 345px) {
+    .about-team-subscribe-right-wrapper {
+      width: 95%; } }
 
 input[type="email"] {
   width: 330px;
@@ -1540,6 +1565,9 @@ input[type="email"] {
   color: #6a6a6a;
   font-size: 18px;
   margin-bottom: 25px; }
+  @media screen and (max-width: 345px) {
+    input[type="email"] {
+      width: 90%; } }
 
 input[type="email"]:focus {
   border: 2px solid #a1c532; }
@@ -1553,6 +1581,9 @@ input[type="email"]:focus {
   @media screen and (max-width: 1000px) {
     .about-team-subscribe-right-wrapper h2 {
       font-size: 25px; } }
+  @media screen and (max-width: 345px) {
+    .about-team-subscribe-right-wrapper h2 {
+      font-size: 20px; } }
 
 .about-team-subscribe-right-wrapper h3 {
   width: 350px;
@@ -1562,6 +1593,9 @@ input[type="email"]:focus {
   font-weight: lighter;
   font-size: 30px;
   margin-bottom: 25px; }
+  @media screen and (max-width: 345px) {
+    .about-team-subscribe-right-wrapper h3 {
+      width: 90%; } }
 
 .about-promo-sell {
   width: 1440px;
@@ -1821,6 +1855,10 @@ input[type="email"]:focus {
   position: relative;
   padding-right: 50px;
   z-index: 10; }
+  @media screen and (max-width: 350px) {
+    .pharm-place,
+    .vacancy-place {
+      font-size: 30px; } }
 
 .pharm-place:before {
   content: url(./img/pharmPoint.png);
@@ -2898,6 +2936,10 @@ textarea {
   font-size: 26px;
   font-weight: lighter;
   margin-bottom: 35px; }
+  @media screen and (max-width: 345px) {
+    .button-subscribe {
+      width: 90%;
+      height: 100%; } }
 
 .button-subscribe:hover {
   -webkit-box-shadow: 1px 1px 2px 1px #154727;
