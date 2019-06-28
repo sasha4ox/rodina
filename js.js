@@ -262,7 +262,6 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone
     let viberForMobile = viberHref.join("")
     viber.setAttribute("href", viberForMobile)
 }
-console.log(document.getElementById("viber").getAttribute("href"))
 }
 
 
