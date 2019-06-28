@@ -1913,7 +1913,6 @@ input[type="email"]:focus {
   color: #58595b;
   font-family: Helvetica;
   font-size: 0px;
-  display: none;
   -webkit-transition: all ease 1s;
   -o-transition: all ease 1s;
   transition: all ease 1s; }
